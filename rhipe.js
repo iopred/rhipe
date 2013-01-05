@@ -1,6 +1,6 @@
 var cf = cf || {};
 cf.difficulty = [0.2, 0.4, 0.6, 0.8, 1]
-cf.difficultyName = ["Amoeba", "Human", "Hero", "Superhero", "Godlike"]
+cf.difficultyName = ["Amoeba", "Human", "Hero", "Superhuman", "Demigod"]
 cf.exercises = [
 	{"group": "row", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Inverted Row", "grp": 1, "maximum": 80, "multiple": 5},
 	{"group": "snatch", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Snatch (per arm)", "grp": 1, "maximum": 50, "multiple": 5},
