@@ -1,15 +1,15 @@
 var $start = $('#start'),
-		startText = $start.text(),
-		stopText = $start.attr('alternate'),
-		$split = $('#split'),
-		$reset = $('#reset'),
-		$timer = $('#timer'),
-		$splits = $('#splits'),
-		$help = $('#help'),
-		$helpSwitch = $('#help-switch'),
-		$helpDiv = $help.find('div'),
-		
-		/*
+	startText = $start.text(),
+	stopText = $start.attr('alternate'),
+	$split = $('#split'),
+	$reset = $('#reset'),
+	$timer = $('#timer'),
+	$splits = $('#splits'),
+	$help = $('#help'),
+	$helpSwitch = $('#help-switch'),
+	$helpDiv = $help.find('div'),
+
+/*
 	 * 0 = start time
 	 * 1 = end time
 	 * 2 = state (stopped or counting)
@@ -19,11 +19,11 @@ var $start = $('#start'),
 	 * 6 = element (not used here, normally stores the DOM element to update with the time)
 	 * 7 = split count
 	 */
-		
-		t = [0, 0, 0, 0, 0, 0, 0, 0],
-		
-		
-		format = function(ms) {
+
+	t = [0, 0, 0, 0, 0, 0, 0, 0],
+
+
+	format = function(ms) {
 		var d = new Date(ms + t[5]).toString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, '$1');
 		var x = String(ms % 1000);
 		while (x.length < 3) {
@@ -31,20 +31,20 @@ var $start = $('#start'),
 		}
 		d += '.' + x;
 		return d.substr(0, d.length - 1);
-		},
-		
-		
-		zero = function(num) {
+	},
+
+
+	zero = function(num) {
 		if (parseInt(num) < 0) var neg = true;
 		if (Math.abs(parseInt(num)) < 10) {
 			num = '0' + Math.abs(num);
 		}
 		if (neg) num = '-' + num;
 		return num;
-		},
-		
-		
-		startStop = function() {
+	},
+
+
+	startStop = function() {
 		t[t[2]] = (+new Date()).valueOf();
 		t[2] = 1 - t[2];
 
@@ -69,10 +69,10 @@ var $start = $('#start'),
 		}
 
 		return false;
-		},
-		
-		
-		reset = function() {
+	},
+
+
+	reset = function() {
 		if (t[2]) {
 			startStop();
 		}
@@ -89,19 +89,19 @@ var $start = $('#start'),
 		t[7] = 0;
 
 		return false;
-		},
-		
-		
-		display = function() {
+	},
+
+
+	display = function() {
 		if (t[2]) {
 			t[1] = (new Date()).valueOf();
 		}
 
 		$timer.text(format(t[3] + t[1] - t[0]));
-		},
-		
-		
-		split = function() {
+	},
+
+
+	split = function() {
 		if (t[2] !== 0) {
 			t[7]++;
 			$splits.show();
@@ -111,14 +111,14 @@ var $start = $('#start'),
 		}
 
 		return false;
-		},
-		
-		
-		load = function() {
+	},
+
+
+	load = function() {
 		t[5] = new Date(1970, 1, 1, 0, 0, 0, 0).valueOf();
 
 		display();
-		};
+	};
 
 $(function() {
 
