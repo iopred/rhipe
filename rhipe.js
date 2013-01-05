@@ -2,7 +2,7 @@ var cf = cf || {};
 cf.difficulty = [0.2, 0.4, 0.6, 0.8, 1]
 cf.difficultyName = ["Amoeba", "Human", "Hero", "Superhero", "Godlike"]
 cf.exercises = [
-	{"group": "row", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Reverse Pushups", "grp": 1, "maximum": 80, "multiple": 5},
+	{"group": "row", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Inverted Row", "grp": 1, "maximum": 80, "multiple": 5},
 	{"group": "snatch", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Snatch (per arm)", "grp": 1, "maximum": 50, "multiple": 5},
 	{"group": "spress", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Handstand Pushups", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "pullup", "bumper": false, "weight": .5, "not-reps": false, "maxweight": 0, "name": "Towel pullups", "grp": 1, "maximum": 40, "multiple": 2},
@@ -24,7 +24,7 @@ cf.exercises = [
 	{"group": "deadlift", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Deadlift", "grp": 2, "maximum": 50, "multiple": 5},
 	{"group": "deadlift", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 315, "name": "Sumo Deadlift", "grp": 2, "maximum": 50, "multiple": 5},
 	{"group": "benchpress", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 185, "name": "Bench press", "grp": 2, "maximum": 80, "multiple": 5},
-	{"group": "benchpress", "bumper": false, "weight": .5, "not-reps": false, "maxweight": 225, "name": "Heavy Bench press", "grp": 2, "maximum": 50, "multiple": 5},
+	{"group": "benchpress", "bumper": false, "weight": .5, "not-reps": false, "maxweight": 225, "name": "Bench press", "grp": 2, "maximum": 50, "multiple": 5},
 	{"group": "spress", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "2-arm Kettle Bell Military Press", "grp": 1, "maximum": 50, "multiple": 5},
 	{"group": "squat", "bumper": false, "weight": .75, "not-reps": false, "maxweight": 225, "name": "Back squat", "grp": 2, "maximum": 60, "multiple": 5},
 	{"group": "squat", "bumper": false, "weight": .75, "not-reps": false, "maxweight": 135, "name": "Back squat", "grp": 2, "maximum": 100, "multiple": 5},
@@ -165,7 +165,7 @@ function renderWorkout(workout) {
 	for (var i=0; i < workout.routine.length; i++) {
 		var exercise = workout.routine[i];
 		var $tr = $("<tr/>");
-		$tr.append("<td>" + exercise["name"] + "</td>");
+		$tr.append("<td>" + getYouTubeLink(exercise["name"]) + "</td>");
 		if (workout["calc-reps"]) {
 			$tr.append("<td>" + exercise["reps"] + "</td>");
 		}
@@ -231,6 +231,10 @@ function getWeightedExercise(numExercises) {
 			}
 		}
 	}
+};
+
+function getYouTubeLink(name) {
+	return '<a href="http://www.youtube.com/results?search_query='+encodeURI(name)+'" target="_new">'+name+'</a>';
 };
 
 // Seed Random Min
