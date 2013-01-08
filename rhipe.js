@@ -32,7 +32,7 @@ cf.exercises = [
 	{"group": "spress", "bumper": false, "weight": .75, "not-reps": false, "maxweight": 135, "name": "Barbell press", "grp": 2, "maximum": 60, "multiple": 5},
 	{"group": "shrug", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Shrugs", "grp": 2, "maximum": 80, "multiple": 5},
 	{"group": "jacks", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Burpees", "grp": 1, "maximum": 80, "multiple": 5},
-	{"group": "pullup", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Muscleups", "grp": 1, "maximum": 60, "multiple": 2},
+	{"group": ["pullup", "dip"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Muscleups", "grp": 1, "maximum": 50, "multiple": 2},
 	{"group": "boxjump", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Box jump", "grp": 1, "maximum": 100, "multiple": 5},
 	{"group": "cardio", "bumper": false, "weight": .5, "not-reps": true, "maxweight": 0, "name": "Rowing (meters)", "grp": 1, "maximum": 2400, "multiple": 400},
 	{"group": "cardio", "bumper": false, "weight": .5, "not-reps": true, "maxweight": 0, "name": "Running (meters)", "grp": 1, "maximum": 1600, "multiple": 400},
@@ -124,8 +124,10 @@ function newWorkout() {
 		if (workout["calc-reps"] == false && exercise["not-reps"] == true) {
 			continue;
 		}
-		if (routineExercises.indexOf(exercise["group"]) == -1) {
-			routineExercises.push(exercise["group"]);
+		var group = exercise["group"] instanceof Array ? exercise["group"] : [exercise["group"]];
+		var newExercises = arrayUnique(routineExercises.concat(group));
+		if (newExercises.length > routineExercises.length) {
+			routineExercises = newExercises;
 			routine.push(exercise);
 		}
 	}
@@ -235,6 +237,17 @@ function getWeightedExercise(numExercises) {
 
 function getYouTubeLink(name) {
 	return '<a href="http://www.youtube.com/results?search_query='+encodeURI(name)+'" target="_new">'+name+'</a>';
+};
+
+function arrayUnique(array) {
+	var a = array.concat();
+	for (var i = 0; i < a.length; ++i) {
+		for (var j = i + 1; j < a.length; ++j) {
+			if (a[i] === a[j]) a.splice(j, 1);
+		}
+	}
+
+	return a;
 };
 
 // Seed Random Min
