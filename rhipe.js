@@ -40,7 +40,7 @@ cf.exercises = [
 	{"group": "lunge", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 60, "name": "Dumbbell Lunge (per leg)", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "oblique", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Twists", "grp": 1, "maximum": 100, "multiple": 2},
 	{"group": "spress", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Clean/Press (per arm)", "grp": 1, "maximum": 40, "multiple": 5},
-	{"group": "ghr", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "GHR Sit-up", "grp": 1, "maximum": 50, "multiple": 2},
+	{"group": "abs", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 45, "name": "Weighted decline situp", "grp": 1, "maximum": 50, "multiple": 2},
 	{"group": "pressup", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Alternating-hand Ball Press-up", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "clean", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Cleans", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "snatch", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 185, "name": "Snatches", "grp": 1, "maximum": 40, "multiple": 2},
