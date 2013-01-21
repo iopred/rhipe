@@ -45,7 +45,8 @@ cf.exercises = [
 	{"group": "clean", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Cleans", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "snatch", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 185, "name": "Snatches", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "clean", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Clean and Jerk", "grp": 1, "maximum": 40, "multiple": 2},
-	{"group": "oblique", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 55, "name": "Dumbell side raise (per side)", "grp": 1, "maximum": 40, "multiple": 2}
+	{"group": "oblique", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 55, "name": "Dumbell side raise (per side)", "grp": 1, "maximum": 40, "multiple": 2},
+	{"group": "benchpress", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 100, "name": "Dumbell floor press", "grp": 1, "maximum": 50, "multiple": 2}
 ];
 cf.workouts=[
 	{"calc-reps": true, "name": "3 Rounds for time", "repmod": [.2, .2, .3, .2, .2], "lbsmod": [1, 1, 1, 1, 1], "mod": 0, "round": true},
