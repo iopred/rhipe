@@ -4,17 +4,17 @@ cf.difficultyName = ["Amoeba", "Human", "Hero", "Superhuman", "Demigod"]
 cf.exercises = [
 	{"group": "row", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Inverted Row", "grp": 1, "maximum": 80, "multiple": 5},
 	{"group": "snatch", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Snatch (per arm)", "grp": 1, "maximum": 50, "multiple": 5},
-	{"group": "spress", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Handstand Pushups", "grp": 1, "maximum": 40, "multiple": 2},
-	{"group": "pullup", "bumper": false, "weight": .5, "not-reps": false, "maxweight": 0, "name": "Towel pullups", "grp": 1, "maximum": 40, "multiple": 2},
+	{"group": ["delts", "tricep"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Handstand Pushups", "grp": 1, "maximum": 40, "multiple": 2},
+	{"group": ["pullup", "bicep"], "bumper": false, "weight": .5, "not-reps": false, "maxweight": 0, "name": "Towel pullups", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "backextension", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Back extension", "grp": 1, "maximum": 100, "multiple": 5},
 	{"group": "cardio", "bumper": false, "weight": .5, "not-reps": true, "maxweight": 0, "name": "Jump Rope", "grp": 1, "maximum": 500, "multiple": 10},
 	{"group": "swing", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "2-Hand Kettle Bell Swings", "grp": 1, "maximum": 80, "multiple": 5},
 	{"group": "jacks", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Jumping Jacks", "grp": 1, "maximum": 100, "multiple": 5},
-	{"group": "pullup", "bumper": false, "weight": .5, "not-reps": false, "maxweight": 0, "name": "Chins", "grp": 1, "maximum": 60, "multiple": 5},
-	{"group": "pullup", "bumper": false, "weight": .5, "not-reps": false, "maxweight": 0, "name": "Pullups", "grp": 1, "maximum": 60, "multiple": 5},
-	{"group": "pressup", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Press-ups", "grp": 1, "maximum": 80, "multiple": 5},
-	{"group": "pushpress", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 135, "name": "Thrusters", "grp": 1, "maximum": 60, "multiple": 5},
-	{"group": "dip", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Dips", "grp": 1, "maximum": 60, "multiple": 5},
+	{"group": ["pullup", "bicep"], "bumper": false, "weight": .5, "not-reps": false, "maxweight": 0, "name": "Chins", "grp": 1, "maximum": 60, "multiple": 5},
+	{"group": ["pullup", "bicep"], "bumper": false, "weight": .5, "not-reps": false, "maxweight": 0, "name": "Pullups", "grp": 1, "maximum": 60, "multiple": 5},
+	{"group": ["pecs", "tricep"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Press-ups", "grp": 1, "maximum": 80, "multiple": 5},
+	{"group": ["delts", "tricep"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 135, "name": "Thrusters", "grp": 1, "maximum": 60, "multiple": 5},
+	{"group": ["dip", "tricep"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Dips", "grp": 1, "maximum": 60, "multiple": 5},
 	{"group": "highpull", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "Kettle Bell High Pull (per arm)", "grp": 1, "maximum": 40, "multiple": 5},
 	{"group": "abs", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Crunches", "grp": 1, "maximum": 100, "multiple": 5},
 	{"group": "abs", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Medicine ball crunch/throw", "grp": 1, "maximum": 100, "multiple": 5},
@@ -23,30 +23,30 @@ cf.exercises = [
 	{"group": "squat", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Squats", "grp": 1, "maximum": 100, "multiple": 5},
 	{"group": "deadlift", "bumper": false, "weight": 1.75, "not-reps": false, "maxweight": 225, "name": "Deadlift", "grp": 2, "maximum": 50, "multiple": 5},
 	{"group": "deadlift", "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 315, "name": "Sumo Deadlift", "grp": 2, "maximum": 50, "multiple": 5},
-	{"group": "benchpress", "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 185, "name": "Bench press", "grp": 2, "maximum": 80, "multiple": 5},
-	{"group": "benchpress", "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 225, "name": "Bench press", "grp": 2, "maximum": 50, "multiple": 5},
-	{"group": "spress", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "2-arm Kettle Bell Military Press", "grp": 1, "maximum": 50, "multiple": 5},
+	{"group": ["pecs", "tricep"], "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 185, "name": "Bench press", "grp": 2, "maximum": 80, "multiple": 5},
+	{"group": ["pecs", "tricep"], "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 225, "name": "Bench press", "grp": 2, "maximum": 50, "multiple": 5},
+	{"group": ["delts", "tricep"], "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "2-arm Kettle Bell Military Press", "grp": 1, "maximum": 50, "multiple": 5},
 	{"group": "squat", "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 225, "name": "Back squat", "grp": 2, "maximum": 60, "multiple": 5},
 	{"group": "squat", "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 135, "name": "Back squat", "grp": 2, "maximum": 100, "multiple": 5},
-	{"group": "spress", "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 185, "name": "Barbell push-press", "grp": 2, "maximum": 60, "multiple": 5},
-	{"group": "spress", "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 135, "name": "Barbell press", "grp": 2, "maximum": 60, "multiple": 5},
+	{"group": ["delts", "tricep"], "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 185, "name": "Barbell push-press", "grp": 2, "maximum": 60, "multiple": 5},
+	{"group": ["delts", "tricep"], "bumper": false, "weight": 1.25, "not-reps": false, "maxweight": 135, "name": "Barbell press", "grp": 2, "maximum": 60, "multiple": 5},
 	{"group": "shrug", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Shrugs", "grp": 2, "maximum": 80, "multiple": 5},
 	{"group": "jacks", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Burpees", "grp": 1, "maximum": 80, "multiple": 5},
-	{"group": ["pullup", "dip"], "bumper": false, "weight": 0.75, "not-reps": false, "maxweight": 0, "name": "Muscleups", "grp": 1, "maximum": 50, "multiple": 2},
+	{"group": ["pullup", "dip", "tricep"], "bumper": false, "weight": 0.75, "not-reps": false, "maxweight": 0, "name": "Muscleups", "grp": 1, "maximum": 50, "multiple": 2},
 	{"group": "boxjump", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Box jump", "grp": 1, "maximum": 100, "multiple": 5},
 	{"group": "cardio", "bumper": false, "weight": .5, "not-reps": true, "maxweight": 0, "name": "Rowing (meters)", "grp": 1, "maximum": 2400, "multiple": 400},
 	{"group": "cardio", "bumper": false, "weight": .5, "not-reps": true, "maxweight": 0, "name": "Running (meters)", "grp": 1, "maximum": 1600, "multiple": 400},
-	{"group": "row", "bumper": false, "weight": 1.5, "not-reps": false, "maxweight": 135, "name": "Barbell Row", "grp": 1, "maximum": 60, "multiple": 5},
+	{"group": ["row", "bicep"], "bumper": false, "weight": 1.5, "not-reps": false, "maxweight": 135, "name": "Barbell Row", "grp": 1, "maximum": 60, "multiple": 5},
 	{"group": "lunge", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 60, "name": "Dumbbell Lunge (per leg)", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "oblique", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Twists", "grp": 1, "maximum": 100, "multiple": 2},
-	{"group": "spress", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Clean/Press (per arm)", "grp": 1, "maximum": 40, "multiple": 5},
+	{"group": "cleanpress", "bumper": false, "weight": .25, "not-reps": false, "maxweight": 55, "name": "Kettle Bell Clean/Press (per arm)", "grp": 1, "maximum": 40, "multiple": 5},
 	{"group": "abs", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 45, "name": "Weighted decline situp", "grp": 1, "maximum": 50, "multiple": 2},
-	{"group": "pressup", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Alternating-hand Ball Press-up", "grp": 1, "maximum": 40, "multiple": 2},
+	{"group": ["pecs", "tricep"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 0, "name": "Alternating-hand Ball Press-up", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "clean", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Cleans", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "snatch", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 185, "name": "Snatches", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "clean", "bumper": true, "weight": 1, "not-reps": false, "maxweight": 225, "name": "Clean and Jerk", "grp": 1, "maximum": 40, "multiple": 2},
 	{"group": "oblique", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 55, "name": "Dumbell side raise (per side)", "grp": 1, "maximum": 40, "multiple": 2},
-	{"group": "benchpress", "bumper": false, "weight": 1, "not-reps": false, "maxweight": 100, "name": "Dumbell floor press", "grp": 1, "maximum": 50, "multiple": 2}
+	{"group": ["pecs", "tricep"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 100, "name": "Dumbell floor press", "grp": 1, "maximum": 50, "multiple": 2}
 ];
 cf.workouts=[
 	{"calc-reps": true, "name": "3 Rounds for time", "repmod": [.2, .2, .3, .2, .2], "lbsmod": [1, 1, 1, 1, 1], "mod": 0, "round": true},
@@ -123,14 +123,20 @@ function newWorkout() {
 		var exercise = getWeightedExercise(numExercises);
 		if (workout["calc-reps"] == false && exercise["not-reps"] == true) {
 			continue;
-		}
+		};
 		var group = exercise["group"] instanceof Array ? exercise["group"] : [exercise["group"]];
-		var newExercises = arrayUnique(routineExercises.concat(group));
-		if (newExercises.length > routineExercises.length) {
-			routineExercises = newExercises;
+		var valid = true;
+		for (var i=0; i < group.length; i++) {
+			if ($.inArray(group[i], routineExercises) >= 0) {
+				valid = false;
+				break;
+			};
+		};
+		if (valid) {
+			routineExercises = routineExercises.concat(group)
 			routine.push(exercise);
-		}
-	}
+		};
+	};
 	workout["routine"] = routine;
 	$("#reset").click();
 	return setDifficulty(workout);
@@ -237,17 +243,6 @@ function getWeightedExercise(numExercises) {
 
 function getYouTubeLink(name) {
 	return '<a href="http://www.youtube.com/results?search_query='+encodeURI(name)+'" target="_new">'+name+'</a>';
-};
-
-function arrayUnique(array) {
-	var a = array.concat();
-	for (var i = 0; i < a.length; ++i) {
-		for (var j = i + 1; j < a.length; ++j) {
-			if (a[i] === a[j]) a.splice(j, 1);
-		}
-	}
-
-	return a;
 };
 
 // Seed Random Min
