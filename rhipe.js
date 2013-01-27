@@ -49,29 +49,29 @@ cf.exercises = [
 	{"group": ["pecs", "tricep"], "bumper": false, "weight": 1, "not-reps": false, "maxweight": 100, "name": "Dumbell floor press", "grp": 1, "maximum": 50, "multiple": 2}
 ];
 cf.workouts=[
-	{"calc-reps": true, "name": "3 Rounds for time", "repmod": [.2, .2, .3, .2, .2], "lbsmod": [1, 1, 1, 1, 1], "mod": 0, "round": true},
-	{"calc-reps": true, "name": "3 Rounds for time", "repmod": [.2, .4, .3, .2], "lbsmod": [1, 1, 1, 1], "mod": 0, "round": true},
-	{"calc-reps": true, "name": "3 Rounds for time", "repmod": [.4, .3, .4], "lbsmod": [1, 1, 1], "mod": 0, "round": true},
-	{"calc-reps": false, "name": "Triangulate (1-3-6-10-15)", "repmod": [0, 0], "lbsmod": [1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "Exercises for time", "repmod": [.6, .4, .8, .4, .6], "lbsmod": [1, 1, 1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": false, "name": "10-9-8-7-6-5-4-3-2-1", "repmod": [0, 0], "lbsmod": [1, 1], "mod": 1, "round": true},
-	{"calc-reps": false, "name": "10-9-8-7-6-5-4-3-2-1", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "5 Rounds for time", "repmod": [.1, .3, .2], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": false, "name": "21-15-9", "repmod": [0, 0], "lbsmod": [1, 1], "mod": 1, "round": true},
-	{"calc-reps": false, "name": "21-15-9", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": false, "name": "Cubication (1-8-27)", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "10 Rounds", "repmod": [.08, .12], "mod": 0, "lbsmod": [1, 1], "round": true},
-	{"calc-reps": true, "name": "10 Rounds", "repmod": [.06, .08, .06], "mod": 0, "lbsmod": [1, 1, 1], "round": true},
-	{"calc-reps": true, "name": "On the minute for 30 mins", "repmod": [.05, .08, .06], "lbsmod": [1, 1, 1], "mod": 0, "round": false},
-	{"calc-reps": true, "name": "On the minute for 30 mins", "repmod": [.07, .13], "lbsmod": [1, 1], "mod": 0, "round": false},
-	{"calc-reps": false, "name": "Fibonacci (1-1-2-3-5-8-13)", "repmod": [0, 0, 0, 0], "lbsmod": [1, 1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": false, "name": "Fibonacci (1-1-2-3-5-8-13)", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "Max rounds in 20 minutes", "repmod": [.05, .08, .06], "lbsmod": [1, 1, 1], "mod": 0, "round": false},
-	{"calc-reps": true, "name": "The 4 X 4 (four rounds of four)", "repmod": [.3, .2, .4, .2], "lbsmod": [1, 1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "Pyramid (for time)", "repmod": [.1, .3, .6, .8, .6, .3, .1], "lbsmod": [1, 1, 1, 1, 1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "Mach 2 (for time)", "repmod": [1, 1], "lbsmod": [1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "Mach 3 (for time)", "repmod": [1, 1, 1], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
-	{"calc-reps": true, "name": "Death by Doubling", "repmod": [2], "lbsmod": [1], "mod": 1, "round": true}			
+	{"weight": 1, "calc-reps": true, "name": "3 Rounds for time", "repmod": [.2, .2, .3, .2, .2], "lbsmod": [1, 1, 1, 1, 1], "mod": 0, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "3 Rounds for time", "repmod": [.2, .4, .3, .2], "lbsmod": [1, 1, 1, 1], "mod": 0, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "3 Rounds for time", "repmod": [.4, .3, .4], "lbsmod": [1, 1, 1], "mod": 0, "round": true},
+	{"weight": 1, "calc-reps": false, "name": "Triangulate (1-3-6-10-15)", "repmod": [0, 0], "lbsmod": [1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "Exercises for time", "repmod": [.6, .4, .8, .4, .6], "lbsmod": [1, 1, 1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": false, "name": "10-9-8-7-6-5-4-3-2-1", "repmod": [0, 0], "lbsmod": [1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": false, "name": "10-9-8-7-6-5-4-3-2-1", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "5 Rounds for time", "repmod": [.1, .3, .2], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": false, "name": "21-15-9", "repmod": [0, 0], "lbsmod": [1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": false, "name": "21-15-9", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": false, "name": "Cubication (1-8-27)", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "10 Rounds", "repmod": [.08, .12], "mod": 0, "lbsmod": [1, 1], "round": true},
+	{"weight": 1, "calc-reps": true, "name": "10 Rounds", "repmod": [.06, .08, .06], "mod": 0, "lbsmod": [1, 1, 1], "round": true},
+	{"weight": 1, "calc-reps": true, "name": "On the minute for 30 mins", "repmod": [.05, .08, .06], "lbsmod": [1, 1, 1], "mod": 0, "round": false},
+	{"weight": 1, "calc-reps": true, "name": "On the minute for 30 mins", "repmod": [.07, .13], "lbsmod": [1, 1], "mod": 0, "round": false},
+	{"weight": 1, "calc-reps": false, "name": "Fibonacci (1-1-2-3-5-8-13)", "repmod": [0, 0, 0, 0], "lbsmod": [1, 1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": false, "name": "Fibonacci (1-1-2-3-5-8-13)", "repmod": [0, 0, 0], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "Max rounds in 20 minutes", "repmod": [.05, .08, .06], "lbsmod": [1, 1, 1], "mod": 0, "round": false},
+	{"weight": 1, "calc-reps": true, "name": "The 4 X 4 (four rounds of four)", "repmod": [.3, .2, .4, .2], "lbsmod": [1, 1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "Pyramid (for time)", "repmod": [.1, .3, .6, .8, .6, .3, .1], "lbsmod": [1, 1, 1, 1, 1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "Mach 2 (for time)", "repmod": [1, 1], "lbsmod": [1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "Mach 3 (for time)", "repmod": [1, 1, 1], "lbsmod": [1, 1, 1], "mod": 1, "round": true},
+	{"weight": 1, "calc-reps": true, "name": "Death by Doubling", "repmod": [2], "lbsmod": [1], "mod": 1, "round": true}			
 ];
 cf.seedDate = new Date();
 
@@ -113,9 +113,8 @@ $(function() {
 });
 
 function newWorkout() {
-	var workouts = cf.workouts;
-	var workoutNum = Math.floor(Math.random() * workouts.length);   
-	var workout = $.extend(true, {}, workouts[workoutNum]);
+	var numWorkouts = getWeightedWorkoutCount();
+	var workout = getWeightedWorkout(numWorkouts);
 	var routine = [];
 	var routineExercises = [];
 	var numExercises = getWeightedExerciseCount();
@@ -237,6 +236,29 @@ function getWeightedExercise(numExercises) {
 			if (count >= choice) {
 				return exercise;
 			}
+		}
+	}
+};
+
+function getWeightedWorkoutCount() {
+	var count = 0;
+	var workout;
+	for (e in cf.workouts) {
+		workout = cf.workouts[e];
+		count += parseFloat(workout["weight"]);
+	}
+	return count;
+};
+
+function getWeightedWorkout(numWorkouts) {
+	var choice = Math.random() * numWorkouts;
+	var count = 0;
+	var workout;
+	for (e in cf.workouts) {
+		workout = $.extend(true, {}, cf.workouts[e]);
+		count += parseFloat(workout["weight"]);
+		if (count >= choice) {
+			return workout;
 		}
 	}
 };
